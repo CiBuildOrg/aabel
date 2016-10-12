@@ -30,6 +30,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{53CAA8A1-A37D-4BFD-8635-178E0722ABDA}"
 	ProjectSection(SolutionItems) = preProject
 		Before.INFRA01.sln.targets = Before.INFRA01.sln.targets
+		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nugetspecs", ".nugetspecs", "{3E4DDEF1-6084-4A46-86AE-B24186AA9A1B}"
