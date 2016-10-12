@@ -1,0 +1,12 @@
+@REM ------------------------------------------------------------------------------
+@REM SECTION: Options to be passed to nuget
+
+SET SOLUTIONSRCDIR=%SOLUTIONDIR%\src
+
+@SET NUGETOPTIONS=-Version !NUGETVERSION!
+REM @SET NUGETOPTIONS=%NUGETOPTIONS% -NoPackageAnalysis
+@SET NUGETOPTIONS=%NUGETOPTIONS% -OutputDir "%NUGETDROPDIR%"
+@SET NUGETOPTIONS=%NUGETOPTIONS% -Properties SOLUTIONSRCDIR=%SOLUTIONSRCDIR%
+REM @SET NUGETOPTIONS=%NUGETOPTIONS% -Verbosity detailed
+
+REM @ECHO [%CMDNAME%] Options: %NUGETOPTIONS%

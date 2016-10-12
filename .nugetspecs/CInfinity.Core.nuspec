@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CInfinity.Simplee.Core</id>
+    <version>$version$</version>
+    <title>CInfinity Core Library</title>
+    <authors>Vlad Eminovici</authors>
+    <owners>Vlad, CInfinity</owners>
+    <projectUrl>https://github.com/dotnet/Orleans</projectUrl>
+    <licenseUrl>https://github.com/dotnet/Orleans#license</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/dotnet/orleans/gh-pages/assets/logo_128.png</iconUrl>
+    <summary>
+      Core library of CInfinity - CInfinity.dll
+    </summary>
+    <description>
+      Core library of CInfinity used both on the client and server.
+    </description>
+    <copyright>Copyright CInfinity 2015</copyright>
+    <tags>CInfinity Cloud-Computing Actor-Model Actors Distributed-Systems C# .NET</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="$SOLUTIONSRCDIR$\.global\*.cs" target="src" />
+    <file src="$SOLUTIONSRCDIR$\VXLibrary\**\*.cs" target="src" />
+  </files>
+</package>
