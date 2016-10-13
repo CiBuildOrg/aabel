@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".cli", ".cli", "{A2685E22-C717-4865-805C-291F1637D55F}"
+	ProjectSection(SolutionItems) = preProject
+		.cli\build.cmd = .cli\build.cmd
+		.cli\BuildStage.bat = .cli\BuildStage.bat
+		.cli\PostBuildStage.bat = .cli\PostBuildStage.bat
+		.cli\PostBuildStage.Nuget.bat = .cli\PostBuildStage.Nuget.bat
+		.cli\PostBuildStage.NugetFlavor.bat = .cli\PostBuildStage.NugetFlavor.bat
+		.cli\PostBuildStage.NugetOptions.bat = .cli\PostBuildStage.NugetOptions.bat
+		.cli\PostBuildStage.NugetVersion.bat = .cli\PostBuildStage.NugetVersion.bat
+		.cli\PreBuildStage.bat = .cli\PreBuildStage.bat
+		.cli\PreBuildStage.MsBuild.bat = .cli\PreBuildStage.MsBuild.bat
+		.cli\PreBuildStage.VsDevPrompt.bat = .cli\PreBuildStage.VsDevPrompt.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A72674E-5920-47DC-8AD9-EEEEC8F8947A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B11118D9-5651-47FE-8057-95C278ED0D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VXLibrary", "src\VXLibrary\VXLibrary.csproj", "{A6205397-7DB9-4361-B951-C7A443EAA7D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VXUTest", "test\VXUTest\VXUTest.csproj", "{03F1732F-B82A-45D0-B84F-F2A4550F31DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VXFTest", "test\VXFTest\VXFTest.csproj", "{0B8841C0-5CBF-43C1-B34A-71EBEF163E9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{53CAA8A1-A37D-4BFD-8635-178E0722ABDA}"
+	ProjectSection(SolutionItems) = preProject
+		Before.INFRA01.sln.targets = Before.INFRA01.sln.targets
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nugetspecs", ".nugetspecs", "{3E4DDEF1-6084-4A46-86AE-B24186AA9A1B}"
+	ProjectSection(SolutionItems) = preProject
+		.nugetspecs\CInfinity.Core.nuspec = .nugetspecs\CInfinity.Core.nuspec
+		.nugetspecs\NugetVersion.txt = .nugetspecs\NugetVersion.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".global", ".global", "{77752F5B-3B73-44C1-9943-2E277BC58871}"
+	ProjectSection(SolutionItems) = preProject
+		src\.global\GlobalAssemblyInfo.cs = src\.global\GlobalAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BB33AE71-50A4-4469-87D2-9B6129C9A417}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.config = .nuget\NuGet.config
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6205397-7DB9-4361-B951-C7A443EAA7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6205397-7DB9-4361-B951-C7A443EAA7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6205397-7DB9-4361-B951-C7A443EAA7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6205397-7DB9-4361-B951-C7A443EAA7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F1732F-B82A-45D0-B84F-F2A4550F31DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F1732F-B82A-45D0-B84F-F2A4550F31DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F1732F-B82A-45D0-B84F-F2A4550F31DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F1732F-B82A-45D0-B84F-F2A4550F31DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8841C0-5CBF-43C1-B34A-71EBEF163E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8841C0-5CBF-43C1-B34A-71EBEF163E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8841C0-5CBF-43C1-B34A-71EBEF163E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8841C0-5CBF-43C1-B34A-71EBEF163E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2685E22-C717-4865-805C-291F1637D55F} = {53CAA8A1-A37D-4BFD-8635-178E0722ABDA}
+		{A6205397-7DB9-4361-B951-C7A443EAA7D2} = {8A72674E-5920-47DC-8AD9-EEEEC8F8947A}
+		{03F1732F-B82A-45D0-B84F-F2A4550F31DA} = {B11118D9-5651-47FE-8057-95C278ED0D85}
+		{0B8841C0-5CBF-43C1-B34A-71EBEF163E9C} = {B11118D9-5651-47FE-8057-95C278ED0D85}
+		{3E4DDEF1-6084-4A46-86AE-B24186AA9A1B} = {53CAA8A1-A37D-4BFD-8635-178E0722ABDA}
+		{77752F5B-3B73-44C1-9943-2E277BC58871} = {8A72674E-5920-47DC-8AD9-EEEEC8F8947A}
+		{BB33AE71-50A4-4469-87D2-9B6129C9A417} = {53CAA8A1-A37D-4BFD-8635-178E0722ABDA}
+	EndGlobalSection
+EndGlobal
