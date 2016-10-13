@@ -12,6 +12,9 @@ if "%1" == "debug" (
 
 if "%CONFIGURATION%" == "" GOTO Usage
 
+if %2. == . GOTO Usage
+SET NUGETDROPDIR=%2
+
 @REM ------------------------------------------------------------------------------
 @REM SECTION: Initializing loval variables
 
@@ -48,9 +51,10 @@ GOTO :EOF
 
 :Usage
 @ECHO Usage:
-@ECHO    build ^<flavor^>
+@ECHO    build ^<flavor^> droppkgs
 @ECHO where:
 @ECHO    flavor: debug, release
+@ECHO    droppkgs: the location where the nuget packages will be dropped.
 EXIT /B -1
 
 :EOF
