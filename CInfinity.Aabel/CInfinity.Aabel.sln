@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CInfinity.Nuget.Insider", "CInfinity.Nuget.Insider\CInfinity.Nuget.Insider.csproj", "{B632B2FA-316F-4729-ACB2-EA5A980CFF8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTestinity.UTest.Nuget.Insider", "CTestinity.UTest.Nuget.Insider\CTestinity.UTest.Nuget.Insider.csproj", "{FAF2F152-CF40-48FF-9FAA-7AE4BF3F17A1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B632B2FA-316F-4729-ACB2-EA5A980CFF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B632B2FA-316F-4729-ACB2-EA5A980CFF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B632B2FA-316F-4729-ACB2-EA5A980CFF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B632B2FA-316F-4729-ACB2-EA5A980CFF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF2F152-CF40-48FF-9FAA-7AE4BF3F17A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF2F152-CF40-48FF-9FAA-7AE4BF3F17A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF2F152-CF40-48FF-9FAA-7AE4BF3F17A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF2F152-CF40-48FF-9FAA-7AE4BF3F17A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
