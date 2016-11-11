@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="CInfinity.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="CInfinity.Middleware.OAuth">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=simplee;AccountKey=cUHFVn+YZqc2OH4lL+Qow5bsdFyFoWA1gJCcYMqMrnan1kYf62i0W90vnxjmy8vWcxr+RXyoRvzcois8/iopBA==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="ead8358f-bbb3-4f91-9327-6c1ed9447873" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
