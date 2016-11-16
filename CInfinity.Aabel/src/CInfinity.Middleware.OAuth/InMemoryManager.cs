@@ -62,6 +62,27 @@ namespace CInfinity.Middleware.OAuth
                         "read"
                     },
                     Enabled = true
+                },
+                new Client
+                {
+                    ClientId = "simpleeweb_implicit",
+                    ClientSecrets = new List<Secret>
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    ClientName = "Simplee Web",
+                    Flow = Flows.Implicit,
+                    AllowedScopes = new List<string>
+                    {
+                        Constants.StandardScopes.OpenId,
+                        Constants.StandardScopes.Profile,
+                        "read"
+                    },
+                    RedirectUris = new List<string>
+                    {
+
+                    },
+                    Enabled = true
                 }
             };
         }
