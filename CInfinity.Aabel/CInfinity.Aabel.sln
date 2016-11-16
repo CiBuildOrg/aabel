@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D47FEF08-F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CInfinity.Middleware.OAuth", "src\CInfinity.Middleware.OAuth\CInfinity.Middleware.OAuth.csproj", "{A9177B02-E50F-4E53-A2D5-B8039884EEDC}"
 EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CInfinity.Cloud", "src\CInfinity.Cloud\CInfinity.Cloud.ccproj", "{96D29F57-9940-4C47-A913-D81BDA270226}"
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CInfinity.Cloudapp", "src\CInfinity.Cloudapp\CInfinity.Cloudapp.ccproj", "{051F958B-6859-448C-9D0E-2D22AE6A00B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,16 +26,16 @@ Global
 		{A9177B02-E50F-4E53-A2D5-B8039884EEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9177B02-E50F-4E53-A2D5-B8039884EEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9177B02-E50F-4E53-A2D5-B8039884EEDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96D29F57-9940-4C47-A913-D81BDA270226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96D29F57-9940-4C47-A913-D81BDA270226}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96D29F57-9940-4C47-A913-D81BDA270226}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96D29F57-9940-4C47-A913-D81BDA270226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A9177B02-E50F-4E53-A2D5-B8039884EEDC} = {5609CE84-9D26-4ADF-A91D-226E9E3C8067}
-		{96D29F57-9940-4C47-A913-D81BDA270226} = {5609CE84-9D26-4ADF-A91D-226E9E3C8067}
+		{051F958B-6859-448C-9D0E-2D22AE6A00B8} = {5609CE84-9D26-4ADF-A91D-226E9E3C8067}
 	EndGlobalSection
 EndGlobal

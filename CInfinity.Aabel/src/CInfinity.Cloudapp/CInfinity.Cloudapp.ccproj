@@ -5,13 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>2.9</ProductVersion>
-    <ProjectGuid>96d29f57-9940-4c47-a913-d81bda270226</ProjectGuid>
+    <ProjectGuid>051f958b-6859-448c-9d0e-2d22ae6a00b8</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CInfinity.Cloud</RootNamespace>
-    <AssemblyName>CInfinity.Cloud</AssemblyName>
+    <RootNamespace>CInfinity.Cloudapp</RootNamespace>
+    <AssemblyName>CInfinity.Cloudapp</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
-    <Name>CInfinity.Cloud</Name>
+    <Name>CInfinity.Cloudapp</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
