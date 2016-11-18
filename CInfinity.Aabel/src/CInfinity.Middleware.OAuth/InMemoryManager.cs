@@ -80,7 +80,11 @@ namespace CInfinity.Middleware.OAuth
                     },
                     RedirectUris = new List<string>
                     {
-
+                        "http://localhost:21857/"
+                    },
+                    PostLogoutRedirectUris = new List<string>
+                    {
+                        "http://localhost:21857/"
                     },
                     Enabled = true
                 }
