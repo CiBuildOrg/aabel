@@ -87,6 +87,32 @@ namespace CInfinity.Middleware.OAuth
                         "http://localhost:21857/"
                     },
                     Enabled = true
+                },
+                new Client
+                {
+                    ClientId = "simpleeweb_code",
+                    ClientSecrets = new List<Secret>
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    ClientName = "Simplee Web",
+                    Flow = Flows.Hybrid,
+                    AllowedScopes = new List<string>
+                    {
+                        Constants.StandardScopes.OpenId,
+                        Constants.StandardScopes.Profile,
+                        Constants.StandardScopes.OfflineAccess,
+                        "read"
+                    },
+                    RedirectUris = new List<string>
+                    {
+                        "http://localhost:21857/"                    
+                    },
+                    PostLogoutRedirectUris = new List<string>
+                    {
+                        "http://localhost:21857/"
+                    },
+                    Enabled = true
                 }
             };
         }
