@@ -3,18 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DC98BE2-71DD-4E69-A41A-6BD84EF11686}"
-	ProjectSection(SolutionItems) = preProject
-		..\README.md = ..\README.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5609CE84-9D26-4ADF-A91D-226E9E3C8067}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D47FEF08-F9DA-435E-B15C-51542F6AEB4C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CInfinity.Middleware.OAuth", "src\CInfinity.Middleware.OAuth\CInfinity.Middleware.OAuth.csproj", "{A9177B02-E50F-4E53-A2D5-B8039884EEDC}"
-EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CInfinity.Cloudapp", "src\CInfinity.Cloudapp\CInfinity.Cloudapp.ccproj", "{051F958B-6859-448C-9D0E-2D22AE6A00B8}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CInfinity.Identity.Webapi", "CInfinity.Identity.Webapi\CInfinity.Identity.Webapi.xproj", "{FF105742-3F8B-4105-8039-402C754B6639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,20 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A9177B02-E50F-4E53-A2D5-B8039884EEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9177B02-E50F-4E53-A2D5-B8039884EEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9177B02-E50F-4E53-A2D5-B8039884EEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9177B02-E50F-4E53-A2D5-B8039884EEDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{051F958B-6859-448C-9D0E-2D22AE6A00B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF105742-3F8B-4105-8039-402C754B6639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF105742-3F8B-4105-8039-402C754B6639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF105742-3F8B-4105-8039-402C754B6639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF105742-3F8B-4105-8039-402C754B6639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A9177B02-E50F-4E53-A2D5-B8039884EEDC} = {5609CE84-9D26-4ADF-A91D-226E9E3C8067}
-		{051F958B-6859-448C-9D0E-2D22AE6A00B8} = {5609CE84-9D26-4ADF-A91D-226E9E3C8067}
 	EndGlobalSection
 EndGlobal
