@@ -1,7 +1,7 @@
-﻿using IdentityServer4.Models;
-
-namespace CInfinity.Identity.Webapi.UI.Models
+﻿namespace CInfinity.Identity.Webapi.UI.Models
 {
+    using IdentityServer4.Models;
+
     /// <summary>
     /// The model for the error view.
     /// </summary>

@@ -11,6 +11,7 @@
     "Microsoft.Extensions.Configuration.FileExtensions": "1.1.0",
     "Microsoft.Extensions.Configuration.Json": "1.1.0",
     "Microsoft.Extensions.Configuration.CommandLine": "1.1.0",
+    "Microsoft.Extensions.Logging.Debug": "1.1.0",
     "Microsoft.Extensions.Logging.Console": "1.1.0",
 
     "IdentityServer4": "1.0.0-rc4-update1"
@@ -21,12 +22,18 @@
   },
 
   "frameworks": {
-    "net452": { }
+    "net452": {}
   },
 
   "buildOptions": {
     "emitEntryPoint": true,
     "preserveCompilationContext": true
+  },
+
+  "runtimeOptions": {
+    "configProperties": {
+      "System.GC.Server": true
+    }
   },
 
   "publishOptions": {

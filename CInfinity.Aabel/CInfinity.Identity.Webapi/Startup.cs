@@ -13,13 +13,6 @@ namespace CInfinity.Identity.Webapi
 {
     public class Startup
     {
-        #region Fields
-        /// <summary>
-        /// Gets the configuration for the host.
-        /// </summary>
-        private IConfigurationRoot Configuration { get; }
-        #endregion
-
         #region Constructors
         /// <summary>
         /// Initializes a new instance of the <see cref="Startup"/> class
@@ -38,6 +31,13 @@ namespace CInfinity.Identity.Webapi
 
             Configuration = builder.Build();
         }
+        #endregion
+
+        #region Fields
+        /// <summary>
+        /// Gets the configuration for the host.
+        /// </summary>
+        private IConfigurationRoot Configuration { get; }
         #endregion
 
         #region Public methods
@@ -74,7 +74,8 @@ namespace CInfinity.Identity.Webapi
         /// </param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole(LogLevel.Debug);
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
 
             if (env.IsDevelopment())app.UseDeveloperExceptionPage();
 
