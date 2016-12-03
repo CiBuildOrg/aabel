@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 using IdentityServer4.Services;
-using CInfinity.Identity.Webapi.UI.Models;
 using IdentityServer4.Models;
+
+using CInfinity.Identity.Webapi.UI.Models;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
