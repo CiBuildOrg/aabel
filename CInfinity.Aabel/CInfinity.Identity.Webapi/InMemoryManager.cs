@@ -160,7 +160,9 @@
                 },
                 PostLogoutRedirectUris =
                 {
-                    "http://localhost:5002"
+                    "http://localhost:5002",
+                    "http://localhost:5002/",
+                    "http://localhost:5002/signout-callback-oidc"
                 },
                 AllowedScopes =
                 {
