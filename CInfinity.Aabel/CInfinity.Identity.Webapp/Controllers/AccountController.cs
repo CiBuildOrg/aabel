@@ -70,6 +70,7 @@ namespace CInfinity.Identity.Webapp.Controllers
                 return ExternalLogin(vm.ExternalProviders.First().AuthenticationScheme, returnUrl);
             }
 
+            ViewData["ReturnUrl"] = returnUrl;
             return View(vm);
         }
 
@@ -222,6 +223,11 @@ namespace CInfinity.Identity.Webapp.Controllers
                 ClientName = logout?.ClientId,
                 SignOutIframeUrl = logout?.SignOutIFrameUrl
             };
+
+            if(vm.PostLogoutRedirectUri != null)
+            {
+                return Redirect(vm.PostLogoutRedirectUri);
+            }
 
             return View("LoggedOut", vm);
         }
