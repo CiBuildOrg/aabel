@@ -13,6 +13,7 @@ using CInfinity.Identity.Webapp.Data;
 using CInfinity.Identity.Webapp.Models;
 using CInfinity.Identity.Webapp.Services;
 using System.Reflection;
+using IdentityServer4.Stores;
 
 namespace CInfinity.Identity.Webapp
 {
@@ -77,8 +78,10 @@ namespace CInfinity.Identity.Webapp
                 .AddInMemoryPersistedGrants()
                 .AddInMemoryIdentityResources(InMemoryManager.GetIdentityResources())
                 .AddInMemoryApiResources(InMemoryManager.GetApiResources())
-                .AddInMemoryClients(InMemoryManager.GetClients())
+                //.AddInMemoryClients(InMemoryManager.GetClients())
                 .AddAspNetIdentity<ApplicationUser>();
+
+            services.AddTransient<IClientStore, ClientStore>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

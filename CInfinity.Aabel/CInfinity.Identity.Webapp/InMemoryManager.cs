@@ -122,7 +122,7 @@
         /// <returns>
         /// The instance of the <see cref="Client"/> class.
         /// </returns>
-        private static Client GetHybridAndClientCredentials(string clientIdPrefix, string secret) =>
+        internal static Client GetHybridAndClientCredentials(string clientIdPrefix, string secret) =>
             new Client
             {
                 ClientId = $"{clientIdPrefix}.hcc",
@@ -133,10 +133,12 @@
                 },
                 AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
 
-                RequireConsent = false,
+                //RequireConsent = false,
 
                 RedirectUris =
                 {
+                    "http://localhost:5002",
+                    "http://localhost:5002/",
                     "http://localhost:5002/signin-oidc"
                 },
                 PostLogoutRedirectUris =
