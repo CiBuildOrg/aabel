@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using CInfinity.Identity.Webapp.Data;
 using CInfinity.Identity.Webapp.Models;
 using CInfinity.Identity.Webapp.Services;
+using System.Reflection;
 
 namespace CInfinity.Identity.Webapp
 {
@@ -67,6 +68,9 @@ namespace CInfinity.Identity.Webapp
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
 
+            var connectionString = Configuration.GetSection("ConnectionStrings")["DefaultConnection"];
+            var migration = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
+
             services
                 .AddIdentityServer()
                 .AddTemporarySigningCredential()
@@ -74,7 +78,6 @@ namespace CInfinity.Identity.Webapp
                 .AddInMemoryIdentityResources(InMemoryManager.GetIdentityResources())
                 .AddInMemoryApiResources(InMemoryManager.GetApiResources())
                 .AddInMemoryClients(InMemoryManager.GetClients())
-                //.AddInMemoryUsers(InMemoryManager.GetUsers());
                 .AddAspNetIdentity<ApplicationUser>();
         }
 
